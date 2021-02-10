@@ -5,13 +5,28 @@ const $step_1 = document.querySelector("#step1");
 
 const $steps = document.querySelectorAll(".step");
 
+const $responses = document.querySelectorAll(".response");
+
+$responses.forEach(response => {
+  response.addEventListener("click", () => {
+    if (response.classList.contains('response--active')) {
+      response.classList.remove('response--active');
+    } else {
+      response.classList.add('response--active');
+      $next_button.classList.remove("d-none");
+    }
+  })
+});
+
 let position = 0;
 
 $start_button.addEventListener("click", () => {
   nextStep();
 });
+
 $next_button.addEventListener("click", () => {
   nextStep();
+  $next_button.classList.add("d-none");
 });
 
 const nextStep = () => {
@@ -20,7 +35,6 @@ const nextStep = () => {
     $step_0.classList.add("step--left");
     $step_1.classList.remove("step--right");
     $step_1.classList.add("step--center");
-    $next_button.classList.remove("d-none");
   } else {
     let $step_center = document.querySelector(`#step${position}`);
     let $step_right = document.querySelector(`#step${position + 1}`);
