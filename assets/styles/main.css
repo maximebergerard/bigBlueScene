@@ -1,5 +1,152 @@
-.container {
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+
+html {
+  font-size: 62.5%;
+
+  /* variables de couleur */
+  --white-1: #fffef8;
+  --white-2: #FFFCD4;
+  --blue-bg: #17adbd;
+  --blue-3: #21c9d1;
+  --orange-1: #f17c57;
+} /* =10px */
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100vh;
-  background-color: #17ADBD;
+  background-color: var(--blue-bg);
+  font-family: "Hammersmith One", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 60px;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.nav--link {
+  text-decoration: none;
+  color: var(--white-1);
+  font-size: 1.8rem;
+}
+
+.button--link {
+  background-color: var(--blue-3);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.nav--text {
+  padding: 12px 24px;
+}
+
+/* Page de création de l'âme */
+
+.step--0 {
+  display: flex;
+  justify-content: center;
+  padding-top: 340px;
+}
+
+.step--0, .step--1, .step--2 {
+  position: absolute;
+  width: 100%;
+  transition: all .4s;
+}
+
+.step--left {
+  left: -100%;
+}
+.step--center {
+  left: 0;
+}
+.step--right {
+  left: 100%;
+}
+
+.d-none {
+  display: none;
+}
+
+.container--question {
+  margin-bottom: 140px;
+}
+
+.container--next {
+  padding-top: 340px;
+}
+
+.text--question {
+  color: var(--white-2);
+  font-size: 24px;
+  text-align: center;
+}
+
+.button--start {
+  background-color: var(--orange-1);
+  display: inline-block;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+.button--start--text {
+  padding: 18px 94px;
+  font-size: 2.2rem;
+  color: var(--white-1);
+  cursor: pointer;
+}
+
+.container--responses {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 310px;
+  padding-right: 310px;
+  margin-bottom: 46px;
+}
+
+.response {
+  cursor: pointer;
+  background-color: var(--blue-3);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  display: inline-block;
+  width: 395px;
+  margin-bottom: 8px;
+}
+
+.response--right {
+  float: right;
+}
+
+.text--response {
+  padding: 18px 0;
+  font-size: 2.2rem;
+  color: var(--white-1);
+  text-align: center;
+}
+
+.button--next {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: var(--orange-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: auto;
 }
