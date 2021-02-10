@@ -178,10 +178,9 @@ body {
 }
 
 .container--responses {
-  width: 100%;
+  width: 800px;
+  margin: auto;
   box-sizing: border-box;
-  padding-left: 310px;
-  padding-right: 310px;
   margin-bottom: 46px;
 }
 
@@ -278,6 +277,7 @@ body {
   }
 
   .container--responses {
+    width: 100px;
     padding-left: 0;
     padding-right: 0;
   }
