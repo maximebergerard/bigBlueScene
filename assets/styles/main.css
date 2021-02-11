@@ -140,6 +140,10 @@ body {
 }
 
 /* Page de création de l'âme */
+.body--ame {
+  overflow: hidden;
+}
+
 .container--ame {
   width: 100%;
   height: 100vh;
@@ -305,6 +309,12 @@ body {
 }
 .text--result {
   margin-right: 20px;
+}
+
+.illu--ame {
+  width: 180px;
+  display: block;
+  margin: auto;
 }
 
 @media only screen and (max-width: 640px) {
