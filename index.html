@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Big Blue</title>
     <link rel="icon" href="assets/images/favicon.svg" />
     <link rel="stylesheet" href="TemplateData/style.css" />
@@ -18,38 +19,42 @@
     </script>
   </head>
   <body>
-    <header class="header">
-      <div class="header__logo">
-        <a href="/">
+    <div class="hero">
+      <header class="header">
+        <div class="header__logo">
           <img
-            src="assets/images/big_blue_logo.svg"
-            alt="Logo de la série Big Blue"
+          src="assets/images/big_blue_logo.svg"
+          alt="Logo de la série Big Blue"
           />
-        </a>
+        </div>
+        <div class="header__nav">
+          <a class="nav--link" href="/">
+            <div class="container--link button--link">
+              <p class="nav--text">
+                La série
+              </p>
+            </div>
+          </a>
+          <a class="nav--link" href="/ame.html">
+            <div class="container--link">
+              <p class="nav--text">
+                Créer mon âme
+              </p>
+            </div>
+          </a>
+        </div>
+      </header>
+      <section class="description">
+        <h2>Et toi, es-tu <br/> toujours un enfant&nbsp;?</h2>
+        <span>> Découvrez les aventures de Blue & Filia</span>
+      </section>
+      <div class="homePalm">
+        <img src="./assets/images/mainpalm.svg" alt="image palmier">
       </div>
-      <div class="header__nav">
-        <a class="nav--link" href="/">
-          <div class="container--link button--link">
-            <p class="nav--text">
-              La série
-            </p>
-          </div>
-        </a>
-        <a class="nav--link" href="/ame.html">
-          <div class="container--link">
-            <p class="nav--text">
-              Créer mon âme
-            </p>
-          </div>
-        </a>
-      </div>
-    </header>
+    </div>
     <main class="container">
       <div class="webgl-content">
         <div id="unityContainer" style="width: 100%; height: 100%"></div>
-      </div>
-      <div class="interface">
-        <!-- mettre toute l'interface here -->
       </div>
     </main>
   </body>
