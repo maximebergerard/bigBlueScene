@@ -251,6 +251,14 @@ body {
   margin-bottom: 46px;
 }
 
+.container--result {
+  margin-top: -80px;
+}
+
+.illu--ame + p{
+  margin: 40px 0 24px 0;
+}
+
 .response {
   box-sizing: border-box;
   cursor: pointer;
